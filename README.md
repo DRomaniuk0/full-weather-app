@@ -118,8 +118,11 @@ OPEN_WEATHERMAP_API_KEY=a2cbf6e830ad7617b647a16b12b96710
 │   ├── public
 │   ├── src
 │   │   ├── components
+|   |   ├── dto
 │   │   ├── hooks
 │   │   ├── pages
+│   │   ├── services
+│   │   ├── App.tsx
 │   │   └── index.tsx
 │   └── Dockerfile
 ├── server
@@ -128,7 +131,9 @@ OPEN_WEATHERMAP_API_KEY=a2cbf6e830ad7617b647a16b12b96710
 │   │   ├── app.module.ts
 │   │   ├── main.ts
 │   └── Dockerfile
-├── .env
-├── docker-compose.yml
+├── docker
+│   ├── docker-compose.dev.yml
+│   ├── docker-compose.yml
+├── .env.sample
 └── README.md
 ```
