@@ -25,6 +25,7 @@ This project is a weather application built with a React frontend and a NestJS b
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - OpenWeatherMap API key
+- Node.js version 18 or higher
 
 ## Installation
 
