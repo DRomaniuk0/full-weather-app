@@ -1,0 +1,1 @@
+export const CITY_ENTRY_PATTERN = /^[a-zA-Zа-яА-ЯёЁїЇіІєЄґҐ\\s]*$/

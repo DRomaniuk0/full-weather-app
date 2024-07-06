@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.16.0",
+    "@nestjs/axios": "^3.0.2",
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/typeorm": "^10.0.2",
+    "axios": "^1.7.2",
+    "env-cmd": "^10.1.0",
+    "react-router-dom": "^6.24.1",
+    "styled-components": "^6.1.11"
+  },
+  "scripts": {
+    "dev:services:build": "docker-compose -p weather-app -f docker/docker-compose.dev.yml --env-file .env build",
+    "dev:services": "docker compose -p weather-app -f docker/docker-compose.dev.yml --env-file .env up",
+    "dev:services:clean": "docker compose -p weather-app -f docker/docker-compose.dev.yml --env-file .env down",
+    "services:build": "docker-compose -p weather-app -f docker/docker-compose.yml --env-file .env build",
+    "services": "docker compose -p weather-app -f docker/docker-compose.yml --env-file .env up",
+    "services:clean": "docker compose -p weather-app -f docker/docker-compose.yml --env-file .env down"
+  }
+}
