@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString, IsNumber } from 'class-validator';
+import {IsNotEmpty, IsString, IsNumber, IsDate} from 'class-validator';
 
 export class WeatherDto {
     @IsNotEmpty()
@@ -26,5 +26,6 @@ export class WeatherDto {
     icon: string;
 
     @IsNotEmpty()
+    @IsDate()
     date: Date;
 }

@@ -7,7 +7,7 @@ import {CITY_ENTRY_PATTERN} from "./Main.constants";
 const MainForm: FC<MainFormProps> = ({ onSubmit }) => {
     const { control, handleSubmit, reset } = useForm<FormValues>();
 
-    const handleFormSubmit = (data: FormValues) => {
+    const handleFormSubmit = (data: FormValues): void => {
         onSubmit(data);
         reset();
     };

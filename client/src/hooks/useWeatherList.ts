@@ -15,7 +15,6 @@ export const useWeatherList = () => {
 
                 if (data.length) {
                     setWeatherList(data);
-
                 }
                 setError(null);
             } catch (err) {

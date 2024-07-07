@@ -32,11 +32,11 @@ export class WeatherService {
                 )
             );
 
-            if (!weatherData || !weatherData.name || !weatherData.main || !weatherData.weather) {
+            if (!weatherData) {
                 throw new NotFoundException('INCOMPLETE_DATA_RECEIVED_FROM_WEATHER_API');
             }
 
-            const createWeatherDto: CreateWeatherDto = {
+            const weatherBody: CreateWeatherDto = {
                 city: weatherData.name,
                 temperature: this.convertKelvinToCelsius(weatherData.main.temp),
                 main: weatherData.weather[0].main,
@@ -45,7 +45,7 @@ export class WeatherService {
                 date: new Date(),
             };
 
-            const weather = this.weatherRepository.create(createWeatherDto);
+            const weather = this.weatherRepository.create(weatherBody);
 
             return this.weatherRepository.save(weather);
         } catch (error) {

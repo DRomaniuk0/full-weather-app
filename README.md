@@ -100,6 +100,7 @@ OPEN_WEATHERMAP_API_KEY=a2cbf6e830ad7617b647a16b12b96710
   - TypeScript
   - Material-UI
   - Axios
+  - React-hook-form
 
 - **Backend:**
   - NestJS
@@ -129,7 +130,6 @@ OPEN_WEATHERMAP_API_KEY=a2cbf6e830ad7617b647a16b12b96710
 ├── server
 │   ├── src
 │   │   ├── weather
-│   │   ├── app.module.ts
 │   │   ├── main.ts
 │   └── Dockerfile
 ├── docker
